@@ -23,4 +23,8 @@
 #
 # *** PLEASE REMOVE THESE COMMENTS BEFORE SUBMITTING YOUR SOLUTION ***
 
-function 
+function mafunction 
+{
+    if 
+    else
+}
