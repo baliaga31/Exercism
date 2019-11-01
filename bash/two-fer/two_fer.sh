@@ -23,8 +23,18 @@
 #
 # *** PLEASE REMOVE THESE COMMENTS BEFORE SUBMITTING YOUR SOLUTION ***
 
-function mafunction 
-{
-    if 
-    else
-}
+main () {
+        if [ "answer" = ""]; then 
+            echo "One for you, one for me."
+        else
+            echo "One for $answer, one for me." 
+        fi
+
+main "$@"
+
+#read -p "Si vous etes d'accord entrez o ou oui : " reponse
+#if [ ! "$reponse" = "o" -a ! "$reponse" = "oui" ]; then
+#    echo "Non, je ne suis pas d'accord !" 
+#else
+#    echo "Oui, je suis d'accord"
+#fi
