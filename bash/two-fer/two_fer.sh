@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 main () {
     if [ -z "$1" ]
         then echo "One for you, one for me."
