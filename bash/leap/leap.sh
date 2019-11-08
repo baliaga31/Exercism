@@ -22,3 +22,9 @@
 #   main "$@"
 #
 # *** PLEASE REMOVE THESE COMMENTS BEFORE SUBMITTING YOUR SOLUTION ***
+
+main() {
+
+}
+
+main "$@"
