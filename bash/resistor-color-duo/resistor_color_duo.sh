@@ -15,16 +15,17 @@ main() {
         ['White']=9
 )
 
-local resistor=""
-for k in "$@"
-    do
-        if ! [[ "${colors["$k"]}" ]]; then
-        echo "Invalid color"
-        exit 1
-        fi
-        resistor="${resistor}${colors["$k"]}"
-    done
-    echo $resistor
+# Secondly, we 
+    local resistor=""
+    if [[ -z "${colors[$1]}" || -z "${colors[$2]}" ]] || -z "${colors[$3]}"
+        then echo "invalid color" && exit 1
+    else 
+        for band in "$@"
+            do
+                resistor="${resistor}${colors["$k"]}"
+            done
+    fi
+    echo "$resistor"
 }
 
 main "$@"
