@@ -1,1 +1,1 @@
-My solutions to the exercices in Exercism website.
+My solutions to the exercices in Exercism website (https://exercism.io/).
