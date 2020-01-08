@@ -10,7 +10,7 @@
 Codon = {
     "AUG": "Methionine",
     "UUU": "Phenylalanine",
-    "UUC": "Phynylalanine",
+    "UUC": "Phenylalanine",
     "UUA": "Leucine",
     "UUG": "Leucine",
     "UCU": "Serine",
@@ -29,10 +29,14 @@ Codon = {
 
 def proteins(strand):
     protein=[]
-    for i in range(0, len(strand), 3):
-        aa = Codon[strand[i:i+3]]
-        protein.append(aa)
-    print(protein)
+    Triplet = [strand[i:i+3] for i in range(0, len(strand), 3)]
+    for aa in Triplet:
+        print(aa)
+        if aa in ["UAA", "UAG", "UGA"]:            
+            return protein
+        elif aa in Codon:
+            protein.append(Codon[aa])
+    return(protein)
 
 ARN="AUGUUUUCUUAAAUG"
 
