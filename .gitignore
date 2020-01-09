@@ -3,3 +3,4 @@
 .exercism
 *_test.py
 *_test.sh
+*_test.php
