@@ -2,7 +2,7 @@
 
 main() {
     # Firstly, make an associative array
-    declare -ar colors=(
+    declare -Ar colors=(
         ['Black']=0
         ['Brown']=1
         ['Red']=2
@@ -15,7 +15,6 @@ main() {
         ['White']=9
 )
 
-# Secondly, we 
     local resistor=""
     if [[ -z "${colors[$1]}" || -z "${colors[$2]}" ]] || -z "${colors[$3]}"
         then echo "invalid color" && exit 1
